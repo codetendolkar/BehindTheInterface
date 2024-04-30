@@ -88,6 +88,14 @@
         font-family: "Sedgwick Ave";
       }
 
+      .book-sample-info {
+        flex: 40%;
+      }
+
+      .book-sample-image {
+        flex: 50%;
+      }
+
       /* Responsive layout - makes a one column layout instead of a two-column layout */
       @media (max-width: 600px) {
         .flex-item-right,
@@ -102,6 +110,12 @@
 
         .toc-flex {
           flex: 50%;
+        }
+
+        .book-sample-info,
+        book-sample-image {
+          flex: 100%;
+          text-align: center;
         }
       }
     </style>
@@ -258,7 +272,7 @@
           <p class="title" style="color: #000">What to Expect?</p>
         </div>
       </div>
-      <div class="book-image flex-item-left" style="flex: 50%">
+      <div class="book-sample-image flex-item-left">
         <div class="item" style="padding: 0">
           <img
             src="https://github.com/codetendolkar/Me/blob/main/sample1.jpeg?raw=true"
@@ -267,7 +281,7 @@
           />
         </div>
       </div>
-      <div class="book-info flex-item-right" style="flex: 40%">
+      <div class="book-sample-info flex-item-right">
         <div class="item">
           <p>
             In each chapter, you will learn the fundamentals behind a
